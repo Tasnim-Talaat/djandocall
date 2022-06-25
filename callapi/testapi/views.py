@@ -13,4 +13,4 @@ def callgetmethod(request):
     res=requests.get(url=url,headers=head)
     #print(res.status_code)
     print(res.json())
-    return HttpResponse('post')
+    return HttpResponse(res.json())
